@@ -1,0 +1,60 @@
+name: Build Luma for iPhone
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'Luma/**'
+      - 'LumaTests/**'
+      - 'Luma.xcodeproj/**'
+      - 'scripts/**'
+      - '.github/workflows/iphone-build.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: luma-iphone-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: macos-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Show selected Apple SDK
+        run: |
+          xcodebuild -version
+          xcrun --sdk iphoneos --show-sdk-version
+
+      - name: Test actual bundled player JavaScript
+        run: node scripts/test_player.mjs
+
+      - name: Build simulator and run XCTest
+        run: bash scripts/check_on_mac.sh
+
+      - name: Compile physical iPhone binary and package unsigned IPA
+        run: bash scripts/build_unsigned_iphone.sh
+
+      - name: Save unsigned iPhone build
+        uses: actions/upload-artifact@v4
+        with:
+          name: Luma-unsigned-iPhone
+          path: |
+            build/iphone/Luma-unsigned.ipa
+            build/iphone/BUILD-INFO.txt
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Save simulator test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Luma-test-results
+          path: build/DerivedData/Logs/Test/
+          if-no-files-found: ignore
+          retention-days: 7

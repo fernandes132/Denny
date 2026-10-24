@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	"archiveVersion" = "1";
+	"classes" = {
+
+	};
+	"objectVersion" = "56";
+	"objects" = {
+		"6127FCDE7262A4C7B3541F53" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/App/LumaApp.swift";
+			"sourceTree" = "<group>";
+		};
+		"7D05F9784667C0E52757E431" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/App/PresentationRouter.swift";
+			"sourceTree" = "<group>";
+		};
+		"A770951766017863C5F16B08" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/App/Theme.swift";
+			"sourceTree" = "<group>";
+		};
+		"CC6F300C8D61D0E3A46E8A18" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/CarPlay/CarPlaySceneDelegate.swift";
+			"sourceTree" = "<group>";
+		};
+		"D0499816E7A7AF7044A08B17" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/Core/APIKeyStore.swift";
+			"sourceTree" = "<group>";
+		};
+		"EA24372E4F2375DF7A1839E0" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/Core/LibraryStore.swift";
+			"sourceTree" = "<group>";
+		};
+		"74A387FC30C3C76EA2CE173F" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/Core/SearchModel.swift";
+			"sourceTree" = "<group>";
+		};
+		"3AFC93F294DD30FA0BA35364" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/Core/Video.swift";
+			"sourceTree" = "<group>";
+		};
+		"D9D33121AFF111844177FF75" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/Core/YouTubeService.swift";
+			"sourceTree" = "<group>";
+		};
+		"432F092E970747D00192AA2F" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/Features/DiscoverView.swift";
+			"sourceTree" = "<group>";
+		};
+		"FB57077CD9403F7C0EE74528" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/Features/LibraryView.swift";
+			"sourceTree" = "<group>";
+		};
+		"FE3A4EE098DFC6760001186B" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/Features/SettingsView.swift";
+			"sourceTree" = "<group>";
+		};
+		"A2346CFCB0B224F969DD071B" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/Features/VideoDetailView.swift";
+			"sourceTree" = "<group>";
+		};
+		"C953DA1A5993A756B62DFD85" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/Player/NativeDemoView.swift";
+			"sourceTree" = "<group>";
+		};
+		"210772BABAC3609B619974FE" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Luma/Player/YouTubePlayer.swift";
+			"sourceTree" = "<group>";
+		};
+		"4CFEA22D233D7C1F9192C7E1" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "folder.assetcatalog";
+			"path" = "Luma/Resources/Assets.xcassets";
+			"sourceTree" = "<group>";
+		};
+		"2C5884374D5879AE61595246" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.html";
+			"path" = "Luma/Resources/YouTubePlayer.html";
+			"sourceTree" = "<group>";
+		};
+		"E41C1D5D5ECEB823567B2DC3" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xml";
+			"path" = "Luma/Resources/PrivacyInfo.xcprivacy";
+			"sourceTree" = "<group>";
+		};
+		"031D7C528246EAA01EBCCA09" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "Luma/Info.plist";
+			"sourceTree" = "<group>";
+		};
+		"3694950C36A632A4A73069AF" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "Luma/Info-CarPlay.plist";
+			"sourceTree" = "<group>";
+		};
+		"AE21FB0F8C5E0377878E2F0A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.entitlements";
+			"path" = "Luma/CarPlay/CarPlay.entitlements";
+			"sourceTree" = "<group>";
+		};
+		"C1FD931500FC13BF2D1A114A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "LumaTests/LumaTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"F40253018FD436D54490FB6B" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "LumaTests/SearchModelTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"67CF9CFBB7472CEC27029C81" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "LumaTests/YouTubeServiceTests.swift";
+			"sourceTree" = "<group>";
+		};
+		"4E5F14D4D135B322F9A43327" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"includeInIndex" = "0";
+			"path" = "Luma.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"279C16E2230F5FC3498CA9D7" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "6127FCDE7262A4C7B3541F53";
+		};
+		"13FA9D28D82F8B57DF370989" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7D05F9784667C0E52757E431";
+		};
+		"3C431E225390F17D6B638D33" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A770951766017863C5F16B08";
+		};
+		"79EE27432124FE74A33D4998" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "CC6F300C8D61D0E3A46E8A18";
+		};
+		"DB9901692B74BAF532D533F0" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D0499816E7A7AF7044A08B17";
+		};
+		"AFC329D9B081EE796EF28FB7" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "EA24372E4F2375DF7A1839E0";
+		};
+		"08D6A3B72BBA547FC512B4D8" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "74A387FC30C3C76EA2CE173F";
+		};
+		"56EB5492925FFA74005059CA" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "3AFC93F294DD30FA0BA35364";
+		};
+		"21958B01D3B6C6D615989587" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D9D33121AFF111844177FF75";
+		};
+		"16CA1868CF9362217289FA5E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "432F092E970747D00192AA2F";
+		};
+		"E600D0D744CFAAB935BD2608" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "FB57077CD9403F7C0EE74528";
+		};
+		"89F75E76E277AAC916667F86" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "FE3A4EE098DFC6760001186B";
+		};
+		"95923BBB61355A0DE68CF58E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A2346CFCB0B224F969DD071B";
+		};
+		"4B1EAFA56A81D491FA317A32" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C953DA1A5993A756B62DFD85";
+		};
+		"BF120E0B606EE1AF078B970F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "210772BABAC3609B619974FE";
+		};
+		"0CCB315C1E7569B2B419E00F" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ("279C16E2230F5FC3498CA9D7", "13FA9D28D82F8B57DF370989", "3C431E225390F17D6B638D33", "79EE27432124FE74A33D4998", "DB9901692B74BAF532D533F0", "AFC329D9B081EE796EF28FB7", "08D6A3B72BBA547FC512B4D8", "56EB5492925FFA74005059CA", "21958B01D3B6C6D615989587", "16CA1868CF9362217289FA5E", "E600D0D744CFAAB935BD2608", "89F75E76E277AAC916667F86", "95923BBB61355A0DE68CF58E", "4B1EAFA56A81D491FA317A32", "BF120E0B606EE1AF078B970F");
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"AFD738E1EF020D466F956116" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ();
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"958BA97C9BF1A6ADAA0C07C2" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4CFEA22D233D7C1F9192C7E1";
+		};
+		"3166AEA899CF70385B0A2950" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2C5884374D5879AE61595246";
+		};
+		"736B960F5540BCFBD06643BF" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "E41C1D5D5ECEB823567B2DC3";
+		};
+		"B8050A7AE7054E1B055C89D9" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ("958BA97C9BF1A6ADAA0C07C2", "3166AEA899CF70385B0A2950", "736B960F5540BCFBD06643BF");
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"367BE69A2F4F1D4736E6F0BB" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"MARKETING_VERSION" = "1.1";
+				"CURRENT_PROJECT_VERSION" = "2";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"LD_RUNPATH_SEARCH_PATHS" = ("$(inherited)", "@executable_path/Frameworks");
+				"PRODUCT_MODULE_NAME" = "Luma";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"PRODUCT_NAME" = "Luma";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "nl.luma.pilot";
+				"INFOPLIST_FILE" = "Luma/Info.plist";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"ENABLE_TESTABILITY" = "YES";
+			};
+			"name" = "Debug";
+		};
+		"DA58BD0A82B158570DB3FF30" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"MARKETING_VERSION" = "1.1";
+				"CURRENT_PROJECT_VERSION" = "2";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"LD_RUNPATH_SEARCH_PATHS" = ("$(inherited)", "@executable_path/Frameworks");
+				"PRODUCT_MODULE_NAME" = "Luma";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"PRODUCT_NAME" = "Luma";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "nl.luma.pilot";
+				"INFOPLIST_FILE" = "Luma/Info.plist";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+			"name" = "Release";
+		};
+		"5A71143795586C7E7DBD14C6" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ("367BE69A2F4F1D4736E6F0BB", "DA58BD0A82B158570DB3FF30");
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"0490590CF85C0511AA54E654" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "5A71143795586C7E7DBD14C6";
+			"buildPhases" = ("0CCB315C1E7569B2B419E00F", "AFD738E1EF020D466F956116", "B8050A7AE7054E1B055C89D9");
+			"buildRules" = ();
+			"dependencies" = ();
+			"name" = "Luma";
+			"productName" = "Luma";
+			"productReference" = "4E5F14D4D135B322F9A43327";
+			"productType" = "com.apple.product-type.application";
+		};
+		"C3EE8BADBF8075D0EC570A26" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"includeInIndex" = "0";
+			"path" = "Luma-CarPlay.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"3C7A5D98685CFC001CF87442" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "6127FCDE7262A4C7B3541F53";
+		};
+		"7FBCE83BD99225CC2C364558" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7D05F9784667C0E52757E431";
+		};
+		"9EBEC5E0282337E98EBD9E2D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A770951766017863C5F16B08";
+		};
+		"E93A44E5B2707495137D2DD1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "CC6F300C8D61D0E3A46E8A18";
+		};
+		"09277933CFF501B0A1EC32A8" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D0499816E7A7AF7044A08B17";
+		};
+		"A02564D6902ECD06AC423C8D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "EA24372E4F2375DF7A1839E0";
+		};
+		"1BB6AD1B2CED0D2AFD9B6424" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "74A387FC30C3C76EA2CE173F";
+		};
+		"7B0F10D3B1CA1495DC9C96B2" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "3AFC93F294DD30FA0BA35364";
+		};
+		"6A6BF36A12A7A049E2F52BDA" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D9D33121AFF111844177FF75";
+		};
+		"1C54D83519417C00095823E6" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "432F092E970747D00192AA2F";
+		};
+		"15BFC5B178FAD96378996D4B" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "FB57077CD9403F7C0EE74528";
+		};
+		"415E31E04D6C02F40077639D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "FE3A4EE098DFC6760001186B";
+		};
+		"0920B1B1060D2AD31B376189" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A2346CFCB0B224F969DD071B";
+		};
+		"ED140228CEE5309B5D31EA2C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C953DA1A5993A756B62DFD85";
+		};
+		"5771F10CFF43A5EA82946413" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "210772BABAC3609B619974FE";
+		};
+		"8767AA748B406F2141FB1CC7" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ("3C7A5D98685CFC001CF87442", "7FBCE83BD99225CC2C364558", "9EBEC5E0282337E98EBD9E2D", "E93A44E5B2707495137D2DD1", "09277933CFF501B0A1EC32A8", "A02564D6902ECD06AC423C8D", "1BB6AD1B2CED0D2AFD9B6424", "7B0F10D3B1CA1495DC9C96B2", "6A6BF36A12A7A049E2F52BDA", "1C54D83519417C00095823E6", "15BFC5B178FAD96378996D4B", "415E31E04D6C02F40077639D", "0920B1B1060D2AD31B376189", "ED140228CEE5309B5D31EA2C", "5771F10CFF43A5EA82946413");
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"F348AB5D6E7C9C8DAB495D7D" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ();
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"A7FA3B347F1ED76CC754CE6F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4CFEA22D233D7C1F9192C7E1";
+		};
+		"8DA36FBCA5F2F4B33979F8D9" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2C5884374D5879AE61595246";
+		};
+		"947C295A3630C3936A98BD71" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "E41C1D5D5ECEB823567B2DC3";
+		};
+		"88085653C724D6C86F34449E" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ("A7FA3B347F1ED76CC754CE6F", "8DA36FBCA5F2F4B33979F8D9", "947C295A3630C3936A98BD71");
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"D897FC5BC9876DFAD403CA7E" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "27.0";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"MARKETING_VERSION" = "1.1";
+				"CURRENT_PROJECT_VERSION" = "2";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"LD_RUNPATH_SEARCH_PATHS" = ("$(inherited)", "@executable_path/Frameworks");
+				"PRODUCT_MODULE_NAME" = "Luma";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"PRODUCT_NAME" = "Luma-CarPlay";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "nl.luma.pilot.carplay";
+				"INFOPLIST_FILE" = "Luma/Info-CarPlay.plist";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) LUMA_CARPLAY";
+				"CODE_SIGN_ENTITLEMENTS" = "Luma/CarPlay/CarPlay.entitlements";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"ENABLE_TESTABILITY" = "YES";
+			};
+			"name" = "Debug";
+		};
+		"405DB846D22DF9E9D6E03AAF" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "27.0";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"MARKETING_VERSION" = "1.1";
+				"CURRENT_PROJECT_VERSION" = "2";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"LD_RUNPATH_SEARCH_PATHS" = ("$(inherited)", "@executable_path/Frameworks");
+				"PRODUCT_MODULE_NAME" = "Luma";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"PRODUCT_NAME" = "Luma-CarPlay";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "nl.luma.pilot.carplay";
+				"INFOPLIST_FILE" = "Luma/Info-CarPlay.plist";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) LUMA_CARPLAY";
+				"CODE_SIGN_ENTITLEMENTS" = "Luma/CarPlay/CarPlay.entitlements";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+			"name" = "Release";
+		};
+		"47AF041BD5224B16030BC438" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ("D897FC5BC9876DFAD403CA7E", "405DB846D22DF9E9D6E03AAF");
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"D6D8832B00A2A1535C601FF4" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "47AF041BD5224B16030BC438";
+			"buildPhases" = ("8767AA748B406F2141FB1CC7", "F348AB5D6E7C9C8DAB495D7D", "88085653C724D6C86F34449E");
+			"buildRules" = ();
+			"dependencies" = ();
+			"name" = "Luma-CarPlay";
+			"productName" = "Luma-CarPlay";
+			"productReference" = "C3EE8BADBF8075D0EC570A26";
+			"productType" = "com.apple.product-type.application";
+		};
+		"D799BAE6088A90139B415FCC" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "98F54143AB4E86B28C3AFEE0";
+			"proxyType" = "1";
+			"remoteGlobalIDString" = "0490590CF85C0511AA54E654";
+			"remoteInfo" = "Luma";
+		};
+		"2A21D9E9044D0B11FAFCCFE3" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "0490590CF85C0511AA54E654";
+			"targetProxy" = "D799BAE6088A90139B415FCC";
+		};
+		"B7480EC88B7F22D0A4757273" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.cfbundle";
+			"includeInIndex" = "0";
+			"path" = "LumaTests.xctest";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"F1B7384FC284BA8E3DC97747" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C1FD931500FC13BF2D1A114A";
+		};
+		"26EFB85EBC6433A5CA32762D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F40253018FD436D54490FB6B";
+		};
+		"DC569B1EA8AD47C6AE9065C7" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "67CF9CFBB7472CEC27029C81";
+		};
+		"9F3002A5D69B22D357A58AA9" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ("F1B7384FC284BA8E3DC97747", "26EFB85EBC6433A5CA32762D", "DC569B1EA8AD47C6AE9065C7");
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"99C7943D90D870A50ADE9160" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ();
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"C584AE92222380FB29B6223F" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = "2147483647";
+			"files" = ();
+			"runOnlyForDeploymentPostprocessing" = "0";
+		};
+		"A52A1A1150766FFE03C23BBA" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"MARKETING_VERSION" = "1.1";
+				"CURRENT_PROJECT_VERSION" = "2";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = ("$(inherited)", "@executable_path/Frameworks");
+				"PRODUCT_MODULE_NAME" = "LumaTests";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "nl.luma.pilot.tests";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/Luma.app/Luma";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"ENABLE_TESTABILITY" = "YES";
+			};
+			"name" = "Debug";
+		};
+		"1265FBB57ED4B2A13131AF99" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"CLANG_ENABLE_MODULES" = "YES";
+				"CLANG_ENABLE_OBJC_ARC" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SUPPORTS_MACCATALYST" = "NO";
+				"MARKETING_VERSION" = "1.1";
+				"CURRENT_PROJECT_VERSION" = "2";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"LD_RUNPATH_SEARCH_PATHS" = ("$(inherited)", "@executable_path/Frameworks");
+				"PRODUCT_MODULE_NAME" = "LumaTests";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "nl.luma.pilot.tests";
+				"TEST_HOST" = "$(BUILT_PRODUCTS_DIR)/Luma.app/Luma";
+				"BUNDLE_LOADER" = "$(TEST_HOST)";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+			"name" = "Release";
+		};
+		"D2F5F126AE0EAB68BDC029C6" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ("A52A1A1150766FFE03C23BBA", "1265FBB57ED4B2A13131AF99");
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"07D9D002957AC2AEC5EE48F6" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "D2F5F126AE0EAB68BDC029C6";
+			"buildPhases" = ("9F3002A5D69B22D357A58AA9", "99C7943D90D870A50ADE9160", "C584AE92222380FB29B6223F");
+			"buildRules" = ();
+			"dependencies" = ("2A21D9E9044D0B11FAFCCFE3");
+			"name" = "LumaTests";
+			"productName" = "LumaTests";
+			"productReference" = "B7480EC88B7F22D0A4757273";
+			"productType" = "com.apple.product-type.bundle.unit-test";
+		};
+		"FBDC4F23F93125BBEEAE800C" = {
+			"isa" = "PBXGroup";
+			"children" = ("4E5F14D4D135B322F9A43327", "C3EE8BADBF8075D0EC570A26", "B7480EC88B7F22D0A4757273");
+			"name" = "Products";
+			"sourceTree" = "<group>";
+		};
+		"B28B7AF69320201D1CF206EB" = {
+			"isa" = "PBXGroup";
+			"children" = ("6127FCDE7262A4C7B3541F53", "7D05F9784667C0E52757E431", "A770951766017863C5F16B08", "CC6F300C8D61D0E3A46E8A18", "D0499816E7A7AF7044A08B17", "EA24372E4F2375DF7A1839E0", "74A387FC30C3C76EA2CE173F", "3AFC93F294DD30FA0BA35364", "D9D33121AFF111844177FF75", "432F092E970747D00192AA2F", "FB57077CD9403F7C0EE74528", "FE3A4EE098DFC6760001186B", "A2346CFCB0B224F969DD071B", "C953DA1A5993A756B62DFD85", "210772BABAC3609B619974FE", "4CFEA22D233D7C1F9192C7E1", "2C5884374D5879AE61595246", "E41C1D5D5ECEB823567B2DC3", "031D7C528246EAA01EBCCA09", "3694950C36A632A4A73069AF", "AE21FB0F8C5E0377878E2F0A", "C1FD931500FC13BF2D1A114A", "F40253018FD436D54490FB6B", "67CF9CFBB7472CEC27029C81", "FBDC4F23F93125BBEEAE800C");
+			"sourceTree" = "<group>";
+		};
+		"89E1FD6268CC0F221A2BE178" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_VERSION" = "5.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"ENABLE_TESTABILITY" = "YES";
+			};
+			"name" = "Debug";
+		};
+		"E6DE6C99132752C914FEF632" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_VERSION" = "5.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+			};
+			"name" = "Release";
+		};
+		"FBD3510CED826C9DAA696E48" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ("89E1FD6268CC0F221A2BE178", "E6DE6C99132752C914FEF632");
+			"defaultConfigurationIsVisible" = "0";
+			"defaultConfigurationName" = "Release";
+		};
+		"98F54143AB4E86B28C3AFEE0" = {
+			"isa" = "PBXProject";
+			"attributes" = {
+				"BuildIndependentTargetsInParallel" = "YES";
+				"LastUpgradeCheck" = "1600";
+				"TargetAttributes" = {
+					"0490590CF85C0511AA54E654" = {
+						"CreatedOnToolsVersion" = "16.0";
+					};
+					"D6D8832B00A2A1535C601FF4" = {
+						"CreatedOnToolsVersion" = "27.0";
+					};
+					"07D9D002957AC2AEC5EE48F6" = {
+						"CreatedOnToolsVersion" = "16.0";
+						"TestTargetID" = "0490590CF85C0511AA54E654";
+					};
+				};
+			};
+			"buildConfigurationList" = "FBD3510CED826C9DAA696E48";
+			"compatibilityVersion" = "Xcode 14.0";
+			"developmentRegion" = "nl";
+			"hasScannedForEncodings" = "0";
+			"knownRegions" = ("nl", "en", "Base");
+			"mainGroup" = "B28B7AF69320201D1CF206EB";
+			"productRefGroup" = "FBDC4F23F93125BBEEAE800C";
+			"projectDirPath" = "";
+			"projectRoot" = "";
+			"targets" = ("0490590CF85C0511AA54E654", "D6D8832B00A2A1535C601FF4", "07D9D002957AC2AEC5EE48F6");
+		};
+	};
+	"rootObject" = "98F54143AB4E86B28C3AFEE0";
+}

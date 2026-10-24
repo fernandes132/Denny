@@ -1,0 +1,45 @@
+Luma iPhone 1.1 source verification — 24 October 2026
+
+PASS: deterministic Xcode project generated, 15 app Swift files.
+PASS: project.pbxproj parsed; 2 app targets and 1 XCTest target.
+PASS: all app source files assigned to both app targets; referenced files exist.
+PASS: Swift tree-sitter grammar parses all 15 app files and 3 test files.
+PASS: 112 source/package checks, including plist/entitlement/asset integrity.
+PASS: actual bundled player JavaScript exercised in Node VM:
+  correct video ID and installed-app origin;
+  autoplay disabled and original controls enabled;
+  ready bridge and error codes 100/101/150/153;
+  minimum player viewport and referrer policy.
+PASS: optional CarPlay target separated from personal iPhone target.
+PASS: exactly one app sheet presenter, shared by add, collection, AirPlay and pending video.
+PASS: shell syntax of scripts/check_on_mac.sh.
+
+NEW XCODE TESTS PREPARED (not executed in Linux):
+  non-cooperative cancelled request cannot overwrite newer results;
+  no media consent means no search request;
+  leaving a loading search resets its state;
+  API response validation, duplicate IDs, key kept out of the URL;
+  distinct quota/restricted/disabled API errors and malformed response;
+  deterministic single-pass Unicode entity decoding;
+  raw ID control-character rejection and invalid-library-entry rejection;
+  CarPlay modal selection waits for foreground and the current sheet.
+
+NOT RUN: Apple SDK compilation/type checking (Xcode unavailable on Linux).
+NOT RUN: 15 XCTest cases (require Xcode/iOS Simulator).
+NOT RUN: native UI rendering, screenshots, VoiceOver and Dynamic Type QA.
+NOT RUN: real YouTube embedded playback, Data API request with real key.
+NOT RUN: on-device signing/install and actual AirPlay/CarPlay playback.
+NOT OBTAINED: Apple CarPlay entitlement approval or vehicle certification.
+
+Direct YouTube oEmbed requests from this executor received proxy 403.
+No substitute proxy, scraped stream or fake successful playback was used.
+Design/Concept.png is generated design artwork, not a rendered app screenshot.
+
+See README.md for Xcode build/test commands and QA.md for device validation.
+
+Cloudbuild preparation:
+PASS: GitHub workflow YAML parses and has a macOS runner.
+PASS: unsigned-device build shell script syntax.
+PASS: Mach-O verifier accepts synthetic physical-iOS fixture and rejects simulator/truncated fixtures.
+NOT RUN: cloudbuild; authenticated GitHub access cannot create a repository (CreateRepository permission denied).
+No compiled IPA exists yet. See CLOUD-BUILD.md.
