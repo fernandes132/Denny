@@ -1,0 +1,33 @@
+name: Build Luma CarPlay candidate
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: luma-carplay-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  carplay:
+    runs-on: xcode-27
+    timeout-minutes: 25
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Build and verify CarPlay candidate
+        run: bash scripts/build_unsigned_carplay.sh
+
+      - name: Save unsigned CarPlay candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: Luma-CarPlay-unsigned-candidate
+          path: |
+            build/carplay/Luma-CarPlay-unsigned.ipa
+            build/carplay/REQUESTED-CarPlay.entitlements
+            build/carplay/BUILD-INFO.txt
+          if-no-files-found: error
+          retention-days: 7
