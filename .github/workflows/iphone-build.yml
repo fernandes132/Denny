@@ -2,6 +2,11 @@ name: Build Luma for iPhone
 
 on:
   workflow_dispatch:
+    inputs:
+      run_tests:
+        description: Run simulator tests (leave enabled unless this exact app source already passed)
+        type: boolean
+        default: true
   push:
     branches: [main]
     paths:
@@ -32,9 +37,11 @@ jobs:
           xcrun --sdk iphoneos --show-sdk-version
 
       - name: Test actual bundled player JavaScript
+        if: github.event_name != 'workflow_dispatch' || inputs.run_tests
         run: node scripts/test_player.mjs
 
       - name: Build simulator and run XCTest
+        if: github.event_name != 'workflow_dispatch' || inputs.run_tests
         run: bash scripts/check_on_mac.sh
 
       - name: Compile physical iPhone binary and package unsigned IPA

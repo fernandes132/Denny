@@ -19,7 +19,7 @@ if [ ! -f "$LUMA_APP_PATH/Luma" ] || [ ! -f "$LUMA_APP_PATH/Info.plist" ]; then
   exit 1
 fi
 # Inspect the actual device binary before packaging; a simulator app is not an iPhone build.
-xcrun lipo -verify_arch arm64 "$LUMA_APP_PATH/Luma"
+xcrun lipo "$LUMA_APP_PATH/Luma" -verify_arch arm64
 python3 scripts/verify_device_binary.py "$LUMA_APP_PATH/Luma"
 
 LUMA_IPHONE_OUTPUT="$LUMA_PROJECT_ROOT/build/iphone"
