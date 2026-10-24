@@ -28,6 +28,13 @@ Artifact ZIP SHA256: 0670082eef3a6ce1688e96b922ebe32e6db507397273b7c9bc9fa408a72
 
 NOT DONE: signing, installation on a physical iPhone, manual native screenshot/UX QA.
 NOT DONE: actual YouTube/API-key playback and CarPlay/AirPlay hardware tests.
-NOT DONE: CarPlay iOS 27 SDK build (runner has 26.5 SDK); entitlement not approved.
+PASS: separate CarPlay simulator/device build using Xcode 27.1 (27A9275).
+Run: https://github.com/fernandes132/Denny/actions/runs/40111730348
+Source commit: a2ca4d5bfe8f9abaa4f21c5353776876fdedf8c1
+Artifact ID: 12565944389; expires 31 October 2026.
+CarPlay IPA SHA256: 148ecf67d8e90d960ce352cabd74dd58de309161ec134170ad8bba653b62045a
+PASS: downloaded artifact digest, physical arm64 iOS Mach-O and resolved CarPlay scene.
+NOT DONE: approved CarPlay entitlement/provisioning, actual vehicle activation.
+Non-blocking SDK 27 warning: old AVPlayerItem notification alias is deprecated.
 The IPA is unsigned. Download alone cannot install it on an iPhone.
 User currently has only an iPhone; a signed distribution route remains necessary.

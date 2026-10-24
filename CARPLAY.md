@@ -1,5 +1,7 @@
 # CarPlay voor jouw auto's
 
+**Buildstatus 24 oktober 2026:** de aparte target is nu echt gebouwd met Xcode 27.1 voor simulator en fysieke iPhones. De [cloudrun](https://github.com/fernandes132/Denny/actions/runs/40111730348) is geslaagd. De kandidaat-IPA is ongetekend en geeft geen Apple-goedkeuring of voertuigactivering. Zie [activeringsstappen en voorbereide aanvraag](CARPLAY-ACTIVATION.md).
+
 ## Wat daadwerkelijk in dit project zit
 
 De target **Luma-CarPlay** gebruikt dezelfde iPhone-interface plus een `CPTemplateApplicationSceneDelegate`. `Info-CarPlay.plist` registreert de scène onder `CPTemplateApplicationSceneSessionRoleApplication`, met scene class `CPTemplateApplicationScene`. Het afzonderlijke entitlement-bestand bevat `com.apple.developer.carplay-video`. De gewone Luma-target gebruikt deze entitlement niet.
