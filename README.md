@@ -12,7 +12,7 @@ De bibliotheek heeft compacte optiemenu's; videorijen schakelen bij toegankelijk
 
 ## Op je MacBook openen
 
-Heb je nog geen MacBook? De [cloudbuild-route](CLOUD-BUILD.md) gebruikt GitHub Actions op macOS. De workflow en het script voor een ongetekende iPhone-IPA zijn toegevoegd. Een echte cloudbuild is nog niet gestart: daarvoor is een toegankelijke repository nodig. Installatie vereist daarna persoonlijke ondertekening; er is ook een mogelijke Windows-route beschreven.
+Heb je nog geen MacBook? De [cloudbuild-route](CLOUD-BUILD.md) gebruikt GitHub Actions op macOS. De workflow heeft een echte iPhone-IPA opgeleverd in [Denny](https://github.com/fernandes132/Denny/actions/runs/40109957438). De 15 native tests zijn geslaagd in [de eerste run](https://github.com/fernandes132/Denny/actions/runs/40109194357); alleen de verpakking moest daarna worden hersteld. Installatie vereist daarna persoonlijke ondertekening; er is ook een mogelijke Windows-route beschreven.
 
 1. Pak de volledige zip uit op je MacBook. Bewaar de mapstructuur.
 2. Installeer Xcode vanuit de Mac App Store en open Xcode eenmaal om de extra onderdelen te installeren. Voor de gewone iPhone-build volstaat een Xcode-versie met iOS 17 SDK of nieuwer; gebruik bij voorkeur de actuele stabiele Xcode.
@@ -92,9 +92,15 @@ Of gebruik Product → Test (⌘U) in Xcode. De optionele Linux/CI-broncontrole 
 
 ## Verificatiestatus
 
-De bronstructuur, Swift-grammatica, plists, projectverwijzingen en player-JavaScript zijn in de bouwomgeving gecontroleerd. Hier ontbreken macOS, Xcode, iOS SDK en een iPhone. Daardoor zijn **compilatie tegen Apple SDK's, XCTest, native screenshots, daadwerkelijke YouTube-playback en CarPlay/AirPlay nog niet uitgevoerd**. Het netwerk in deze omgeving blokkeerde ook directe YouTube-oEmbed-aanvragen; er is geen playbacksucces geclaimd op basis van een thumbnail.
+**24 oktober 2026: daadwerkelijk gebouwd met Xcode 26.6 / iOS SDK 26.5 op GitHub macOS.** De simulatorbuild en alle 15 XCTest-tests slaagden (0 failures). Ook de Release-build voor fysieke iPhones slaagde. Na herstel van de argumentvolgorde in de `lipo`-controle is de ongetekende IPA succesvol verpakt en als artifact opgeslagen.
 
-Zie QA.md voor de gerichte checklist. De bron is overdraagbaar naar je MacBook; een ondertekende installeerbare IPA wordt niet meegeleverd omdat daarvoor jouw Apple-team en apparaatregistratie nodig zijn.
+- [Tests, broncommit 0b609db](https://github.com/fernandes132/Denny/actions/runs/40109194357): native tests geslaagd; deze run eindigde door de latere verpakkingsfout met failure.
+- [Geslaagde iPhone-verpakking, broncommit 1836ed1](https://github.com/fernandes132/Denny/actions/runs/40109957438): iPhone-build en packaging success. De app-, project- en testbronnen zijn identiek aan de geteste commit; alleen buildscript/workflow wijzigden. Daarom zijn de native tests niet herhaald.
+- [Download buildartifact](https://github.com/fernandes132/Denny/actions/runs/40109957438/artifacts/12566112435), bewaartermijn tot 31 oktober 2026.
+
+De gedownloade echte IPA is aanvullend gecontroleerd op ZIP-integriteit, `Payload/Luma.app`, arm64 Mach-O met fysieke iOS-platformcode, iOS 17 minimum en overeenkomende SHA-256. De app is **niet ondertekend of op een echte iPhone geïnstalleerd**. Handmatige UI/VoiceOver/playback, YouTube met een echte sleutel en CarPlay/AirPlay op hardware zijn nog niet gevalideerd. De CarPlay-target is niet tegen iOS 27 gebouwd: deze runner heeft SDK 26.5.
+
+Voor installatie met alleen een iPhone is een aparte onderteken-/distributieroute nodig, bijvoorbeeld TestFlight met een betaald Apple Developer-account. Deze build publiceert niets in de App Store en creëert geen Apple-account. Zie CLOUD-BUILD.md en QA.md.
 
 ## Privacy en inhoud
 

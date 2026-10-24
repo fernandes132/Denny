@@ -2,7 +2,7 @@
 
 ## Uitgevoerd in Linux
 
-De precieze uitkomst staat in `VERIFICATION.txt`. Broncontrole is geen Apple SDK-build. Geen iPhone- of CarPlay-playback geclaimd.
+De precieze uitkomst staat in `VERIFICATION.txt`. Inmiddels zijn ook de echte simulatorbuild, alle 15 native XCTest-tests en een Release-build voor fysieke iPhones geslaagd via GitHub macOS. De echte IPA is lokaal op integriteit en platform gecontroleerd. Dit vervangt de onderstaande handmatige UI- en playbacktests niet. Geen iPhone- of CarPlay-playback geclaimd.
 
 ## Uit te voeren op Mac/iPhone
 

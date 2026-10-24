@@ -1,45 +1,33 @@
-Luma iPhone 1.1 source verification — 24 October 2026
+Luma iPhone 1.1 — actual cloud build verification, 24 October 2026
 
-PASS: deterministic Xcode project generated, 15 app Swift files.
-PASS: project.pbxproj parsed; 2 app targets and 1 XCTest target.
-PASS: all app source files assigned to both app targets; referenced files exist.
-PASS: Swift tree-sitter grammar parses all 15 app files and 3 test files.
-PASS: 112 source/package checks, including plist/entitlement/asset integrity.
-PASS: actual bundled player JavaScript exercised in Node VM:
-  correct video ID and installed-app origin;
-  autoplay disabled and original controls enabled;
-  ready bridge and error codes 100/101/150/153;
-  minimum player viewport and referrer policy.
-PASS: optional CarPlay target separated from personal iPhone target.
-PASS: exactly one app sheet presenter, shared by add, collection, AirPlay and pending video.
-PASS: shell syntax of scripts/check_on_mac.sh.
+Source: https://github.com/fernandes132/Denny
+Tests run: https://github.com/fernandes132/Denny/actions/runs/40109194357
+Tested app source commit: 0b609db9e9c35cc6557f66c769aa4a6ea8cc74b0
+Packaging run: https://github.com/fernandes132/Denny/actions/runs/40109957438
+Packaged source commit: 1836ed1690080e4af7790b6d0fa2fb6a10369998
+Toolchain: Xcode 26.6 (17F113), iOS SDK 26.5.
 
-NEW XCODE TESTS PREPARED (not executed in Linux):
-  non-cooperative cancelled request cannot overwrite newer results;
-  no media consent means no search request;
-  leaving a loading search resets its state;
-  API response validation, duplicate IDs, key kept out of the URL;
-  distinct quota/restricted/disabled API errors and malformed response;
-  deterministic single-pass Unicode entity decoding;
-  raw ID control-character rejection and invalid-library-entry rejection;
-  CarPlay modal selection waits for foreground and the current sheet.
+PASS: actual simulator build.
+PASS: 15 XCTest cases, 0 failures (8 library/link/router + 3 search + 4 API tests).
+PASS: actual Release build for physical iOS / arm64.
+PASS: corrected lipo check and successful packaging/upload.
+PASS: downloaded artifact digest matches GitHub metadata.
+PASS: actual IPA ZIP integrity, Payload/Luma.app structure and iPhoneOS Info.plist.
+PASS: actual executable Mach-O platform=2 (physical iOS), arm64, executable.
+PASS: minimum iOS 17.0 and app version 1.1.
+PASS: local source checks and bundled player JS test.
 
-NOT RUN: Apple SDK compilation/type checking (Xcode unavailable on Linux).
-NOT RUN: 15 XCTest cases (require Xcode/iOS Simulator).
-NOT RUN: native UI rendering, screenshots, VoiceOver and Dynamic Type QA.
-NOT RUN: real YouTube embedded playback, Data API request with real key.
-NOT RUN: on-device signing/install and actual AirPlay/CarPlay playback.
-NOT OBTAINED: Apple CarPlay entitlement approval or vehicle certification.
+First run's app/test compilation succeeded, but an incorrectly ordered lipo argument
+failed packaging. Only build script and workflow changed for the second run.
+App, project and test sources are identical between these commits (git diff checked).
+The second run intentionally skipped previously successful native tests.
 
-Direct YouTube oEmbed requests from this executor received proxy 403.
-No substitute proxy, scraped stream or fake successful playback was used.
-Design/Concept.png is generated design artwork, not a rendered app screenshot.
+Artifact ID: 12566112435, expires 31 October 2026.
+IPA SHA256: 2ff4d51414547eaec2a234b22368ab7c1b6d70e110cf496f761257ef5bbda283
+Artifact ZIP SHA256: 0670082eef3a6ce1688e96b922ebe32e6db507397273b7c9bc9fa408a725e836
 
-See README.md for Xcode build/test commands and QA.md for device validation.
-
-Cloudbuild preparation:
-PASS: GitHub workflow YAML parses and has a macOS runner.
-PASS: unsigned-device build shell script syntax.
-PASS: Mach-O verifier accepts synthetic physical-iOS fixture and rejects simulator/truncated fixtures.
-NOT RUN: cloudbuild; authenticated GitHub access cannot create a repository (CreateRepository permission denied).
-No compiled IPA exists yet. See CLOUD-BUILD.md.
+NOT DONE: signing, installation on a physical iPhone, manual native screenshot/UX QA.
+NOT DONE: actual YouTube/API-key playback and CarPlay/AirPlay hardware tests.
+NOT DONE: CarPlay iOS 27 SDK build (runner has 26.5 SDK); entitlement not approved.
+The IPA is unsigned. Download alone cannot install it on an iPhone.
+User currently has only an iPhone; a signed distribution route remains necessary.

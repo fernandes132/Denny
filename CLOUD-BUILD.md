@@ -2,17 +2,17 @@
 
 De app kan op een macOS-cloudrunner worden gebouwd. `.github/workflows/iphone-build.yml` bevat de workflow: echte simulatorbuild en XCTest, daarna compilatie voor een fysieke iPhone en een gecontroleerde `Luma-unsigned.ipa` als downloadbaar artifact. Er wordt geen iOS-simulator-app omgedoopt tot iPhone-app.
 
-## Wat nog nodig is om de build te starten
+## Actuele build
 
-Er is nu geen toegankelijke repository voor dit project. Aanmaken via de aangemelde GitHub-commandoregel is geprobeerd; GitHub weigerde dit met `does not have the correct permissions to execute CreateRepository`. Er is dus **geen cloudbuild gestart en geen IPA gecompileerd**.
+De koppeling is geactiveerd en de bron staat in [fernandes132/Denny](https://github.com/fernandes132/Denny). De [cloudbuild voor iPhone is geslaagd](https://github.com/fernandes132/Denny/actions/runs/40109957438). De [eerste run](https://github.com/fernandes132/Denny/actions/runs/40109194357) bewijst 15 geslaagde native tests; die run eindigde pas bij de daaropvolgende verpakkingscontrole met een fout. Na herstel is alleen de iPhone-build/verpakking herhaald, met ongewijzigde app- en testbronnen.
 
-Maak op [GitHub een nieuwe privérepository](https://github.com/new), bijvoorbeeld `luma-iphone-pilot`, en geef de repositorylink door in dit gesprek. Zorg dat de GitHub-koppeling deze repository kan benaderen. Deel geen token of wachtwoord. De bron, workflow en scripts zijn al lokaal voorbereid; daarna kunnen we uploaden, de runner starten, logs bekijken en eventuele compilerfouten oplossen.
+Download onder Artifacts **Luma-unsigned-iPhone**. De zip bevat de echte `Luma-unsigned.ipa` en `BUILD-INFO.txt`. Het artifact verloopt op 31 oktober 2026. SHA-256 van de IPA: `2ff4d51414547eaec2a234b22368ab7c1b6d70e110cf496f761257ef5bbda283`.
 
-Als je het zelf uploadt: de inhoud van de map Luma-iPhone hoort direct in de repositoryroot. De workflow moet exact onder `.github/workflows/iphone-build.yml` terechtkomen. Bij een zip of een extra bovenliggende map in de repository start hij niet vanzelf. Open daarna Actions → Build Luma for iPhone → Run workflow. Een eerste push naar main met deze bestanden start hem ook.
+Toekomstige builds: Actions → Build Luma for iPhone → Run workflow. Laat **run_tests** normaal ingeschakeld. Alleen wanneer de exacte app-/testbronnen al geslaagd zijn en uitsluitend de verpakking wijzigt, kan deze optie uit. Een push van appcode naar main start standaard de volledige controle.
 
 ## Kosten
 
-Voor een private repository gebruikt een standaardrunner de inbegrepen Actions-minuten en opslag van je GitHub-plan. Gebruik boven dat tegoed kan geld kosten. De workflow heeft een limiet van 30 minuten en bewaart artifacts 7 dagen. Controleer je beschikbare tegoed en stel desgewenst een bestedingslimiet in; de workflow belooft geen onbeperkte gratis builds. [GitHub runnerdocumentatie](https://docs.github.com/en/actions/reference/runners/github-hosted-runners).
+Denny is op dit moment openbaar; standaard GitHub-hosted runners voor openbare repositories zijn volgens GitHub gratis. Voor een private repository gebruikt een standaardrunner de inbegrepen Actions-minuten en opslag van je GitHub-plan. Gebruik boven dat tegoed kan geld kosten. De workflow heeft een limiet van 30 minuten en bewaart artifacts 7 dagen. Controleer je beschikbare tegoed en stel desgewenst een bestedingslimiet in; de workflow belooft geen onbeperkte gratis builds. [GitHub runnerdocumentatie](https://docs.github.com/en/actions/reference/runners/github-hosted-runners).
 
 ## Gebouwd is nog niet geïnstalleerd
 
@@ -22,4 +22,4 @@ Een route zonder eigen Mac is persoonlijke ondertekening met **AltStore Classic 
 
 AltStore PAL is een ander product en geen algemene route voor willekeurige ongetekende IPA's. AltStore Classic verleent geen CarPlay-video-entitlement. De cloudbuild gebruikt daarom de gewone iPhone-target. De aparte CarPlay-target en voertuigtoelating blijven afhankelijk van Apple en de auto.
 
-Zonder een eigen Mac én zonder toegang tot een geschikte Windows-computer of ondertekenservice is deze persoonlijke installatieroute nog niet compleet. Je hoeft de app niet in de App Store te zetten, maar een serverbuild alleen vervangt de vereiste ondertekening niet.
+De gebruiker heeft alleen een iPhone beschikbaar. Daardoor is de hierboven beschreven Windows-installatieroute nu niet uitvoerbaar. Een mogelijke route is TestFlight via een betaald Apple Developer-account, met een apart ondertekende cloudbuild en App Store Connect-configuratie. Die accounttoegang en configuratie zijn nog niet aanwezig; de huidige IPA is daarom nog niet vanaf de iPhone installeerbaar. Je hoeft de app niet in de App Store te zetten, maar een serverbuild alleen vervangt de vereiste ondertekening niet.
